@@ -1,0 +1,657 @@
+/* start main */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{ font-family: 'open sans', sans-serif; background-color: #f5f5f5; }
+
+
+.container
+{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.layer {
+    background-color: rgba(49, 55, 61, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* end main */
+/* start header */
+.header
+{
+    background-image: url(../images/header-0-background.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+.header .test {display: flex; flex-direction: column;justify-content: space-between; align-items: center; }
+
+.header .nav
+{
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /*position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(49, 55, 61, 0.5);
+    padding: 0;*/
+}
+
+.header .nav h2
+{
+    display: flex;
+    justify-content: space-between; align-items: center;
+    font-size: 27px;
+    color: #fff;
+    float: left;
+}
+.header .nav .links { color: #fff; float: right; overflow: hidden; font-size: 20px; padding: 15px; cursor: pointer; }
+
+.header .links i { margin-left: 5px; }
+/*.header .links i:hover{ color: #f7600e; cursor: pointer; transition: 0.3s ease; }*/
+.header  ul 
+{ 
+    display: none;
+    list-style: none;
+    color: #fff;
+    float: right;
+    font-size: 20px;
+    gap: 15px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.header ul li { font-size: 20px; display: inline-block; padding: 15px; text-align: center; overflow: hidden; }
+.header ul li:hover{ color: #f7600e; cursor: pointer; border-bottom: 1px solid #f7600e; }
+.header .active { color: #f7600e; border-bottom: 1px solid #f7600e; }
+
+.header .slider
+{
+    text-align: center;
+}
+
+.header .slider .flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    padding: 20px;
+}
+
+.header .slider h1
+{
+    font-size: 50px;
+    padding: 25px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.header .slider p
+{
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    padding: 30px;
+    line-height: 1.7;
+}
+
+.header .slider .buttons
+{
+    margin: 50px 30px 30px 50px;
+}
+
+.header .slider button
+{
+    padding: 10px 45px;
+    margin-left: 20px;
+    background: none;
+    color: #fff;
+    border: 2px solid #777;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.header .slider button:last-child { padding: 10px 35px; }
+
+
+.header .slider button:hover { background-color: #f7600e; border-color: #f7600e; cursor: pointer; }
+
+.header .arrow
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+.header .arrow i
+{
+    color: #fff;
+    border: 1px solid #999;
+    padding: 1px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.header .arrow i:hover{ color: #f7600e; background-color: #fff; cursor: pointer; transition: 0.3s ease; }
+
+
+
+/* end header */
+
+/* start icons */
+
+.icons
+{
+    padding: 80px 0;
+}
+
+.icons ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons ul li
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icons ul li i 
+{
+    color: #f7600e;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    /*padding: 40px 40px 40px 40px;*/
+    text-align: center;
+    transition: 0.3s ease;
+}
+.icons ul li i:hover{ color: #fff; background-color: #f7600e; border-color: #f7600e; }
+.icons ul li p { line-height: 2; }
+/* end icons */
+
+/* Start Search */
+
+.search
+{
+    background-image: url(../images/Tanatos_template-1.jpg);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.search .here 
+{
+    display: flex;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    
+    text-align: center;
+    gap: 20px;
+
+    padding: 133px 0;
+}
+.search input[type="email"]
+{
+    padding: 10px;
+    width: 700px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    float: left;
+}
+
+.search button
+{
+    float: right;
+    padding: 11px 45px;
+    background-color: transparent;
+    color: #f7600e;
+    border: 1px solid #f7600e;
+    border-radius: 10px;
+    margin-left: 40px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+}
+.search button:hover { background-color: #f7600e; color: #fff; border: 1px solid #f7600e; }
+/* End Search */
+
+/* Start Our Work */
+
+.our-work
+{
+    padding: 90px 0;
+    text-align: center;
+}
+
+.our-work .title
+{
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-work .title h2 { font-size: 30px; }
+.our-work .title p { width: 50%; line-height: 2; }
+
+
+.our-work .gallery { padding-bottom: 70px; }
+
+.our-work ul
+{
+    list-style: none;
+    overflow: hidden;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 0;
+}
+
+.our-work ul li
+{
+    padding: 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.our-work ul li img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.our-work ul li h3 { color: #fff; }
+.our-work ul li p { color: #fff; line-height: 1.7; width: 70%; }
+.our-work ul li button { color: #f7600e; background-color: #fff; padding: 10px 25px; }
+
+.our-work ul li .over
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: rgba(247, 96, 14,0.8);
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.our-work ul li:hover .over
+{
+    opacity: 1;
+}
+
+.our-work .over button { background-color: transparent; border-color: #fff; color: #fff; font-weight: bold;}
+.our-work .over button:hover { background-color: #fff; color: #f7600e; }
+
+
+.our-work button
+{
+    padding: 10px 40px;
+    background: none;
+    color: #666;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.our-work button:hover { background-color: #f7600e; border-color: #f7600e; color: #fff; cursor: pointer; }
+
+/* End Our Work */
+
+/* Start Testomenials */
+
+.testomenials
+{
+    background-image: url(../images/Tanatos_template-2.jpg);
+    background-size: cover;
+    position: relative;
+    height: 450px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.testomenials .sliding
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testomenials i:first-of-type
+{
+    color: #ccc;
+    z-index: 1;
+    position: absolute;
+    left: 10vw;
+}
+.testomenials i:last-of-type
+{
+    color: #ccc;
+    z-index: 1;
+    position: absolute;
+    right: 10vw;
+}
+
+.testomenials i:hover { cursor: pointer; color: #f7600e; transition: 0.3s ease; }
+
+.testomenials .sliding .show
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.7s;
+}
+
+.testomenials .listing
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    min-width: 100%;
+}
+
+.testomenials .listing img { width: 100px; height: 100px; border-radius: 50%; box-shadow: 5px 10px 15px #333; }
+
+
+.testomenials .listing blockquote { width: 80%; font-size: 22px; font-style: italic; line-height: 2;}
+
+/* End Testomenials */
+
+/* Start Team */
+
+.team
+{
+    padding: 90px 0;
+}
+
+.team .title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .title h2 { font-size: 30px; }
+.team .title p { width: 50%; line-height: 2; text-align: center; }
+
+.team ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*gap: 10px;*/
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.team ul li
+{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    filter: grayscale(100%);
+    width: 23%;
+    margin: 0 0 0 1%;
+}.team ul li:last-of-type { margin-right: 1%; }
+
+.team ul li img
+{
+    width: 100%;
+    height: 300px;
+}
+
+.team ul li h2 { color: #999; }
+
+.team ul li .social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.team ul li .social img
+{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+.team ul li p { text-align: center; color: #999; line-height: 1.7; }
+
+.team ul li:hover
+{
+    filter: grayscale(0);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px #333;
+}
+
+.team ul li:hover h2 { color: #555; transition: 0.4s ease; }
+.team ul li:hover p { color: #666; transition: 0.4s ease; }
+.team ul li .social img:hover { color: rgba(247, 96, 14, 0.5); transition: 0.2s ease; }
+
+.team .points { text-align: center; }
+.team .points li
+{
+    border: 2px solid #888;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+
+/* End Team */
+
+/* Start Contact */
+
+.contact
+{
+    background-image: url(../images/Tanatos_template-3.jpg);
+    background-size: cover;
+    position: relative;
+    height: 800px;
+    text-align: center;
+}
+.contact .info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.contact h2 { color: #fff; font-size: 30px; }
+.contact p { color: #fff; width: 50%; line-height: 1.7; font-size: 18px; }
+
+.contact .grid
+{
+    display: grid;
+    width: 60%;
+    gap: 25px;
+    grid-template-areas:
+    "left right"
+    "middle middle"
+    "bottomL bottomR";
+    overflow: hidden;
+    padding: 50px 10px;
+}
+
+.contact .grid input:first-of-type[type="email"]
+{   grid-area: left; 
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.contact .grid input:last-of-type
+{ 
+    grid-area: right;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.contact .grid textarea { grid-area: middle; border-radius: 10px; font-size: 18px; padding: 15px; }
+
+
+
+.contact .flex
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+.contact button { padding: 15px 45px; background-color: #f7600e; border-radius: 10px; border: none; color: #fff; float: left; font-weight: 800; }
+.contact button:hover { color: #f7600e; background-color: #fff; transition: 0.4s ease; cursor: pointer; }
+.contact ul 
+{ 
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.contact ul li { cursor: pointer; position: relative; }
+
+.contact ul li .overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: rgba(247, 96, 14,0.7);
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contact ul li .overlay:hover{ opacity: 1; }
+
+.contact ul li img { width: 40px; height: 40px; }
+.contact ul li img:hover {  transition: 0.2s ease; }
+
+/* End Contact */
+
+/* Start Footer */
+
+.footer
+{
+    background-color: #232323;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.footer #footer { color: #fff; font-weight: bold;  }
+.footer #dot { font-weight: bold; font-size: 20px; }
+
+
+
+
+
+/* framework */
+span
+{
+    color: #f7600e;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.upper
+{
+    text-transform: uppercase;
+}
+
+p
+{
+    color: #666;
+}
+
+.hidden
+{
+    display: none;
+}
