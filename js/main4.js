@@ -28,7 +28,7 @@ $(function() {
 
     //menu open
     $(".links").on("click", ()=> {
-        $(".header ul").slideToggle("fast");
+        $(".header ul").slideToggle("slow");
         //$(".header .nav .links").css('color', "#f7600e");
     });
 
